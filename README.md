@@ -20,7 +20,7 @@ That's it! Now, all your local links will not cause page refresh. Remote links w
 
 You can listen to some events Joconut can emit using **on** method:
 ```javascript
-$.joconut.on('error', function(){ // fires on timeout, page without <body>, invalid requests
+$.joconut.on('error', function(err){ // fires on timeout, page without <body>, invalid requests
 	alert('Error while loading new page!');
 });
 
@@ -28,11 +28,11 @@ $.joconut.on('new', function(){ // Page changed
 	alert('New page!');
 });
 
-$.joconut.on('beforeNew', function(){ // page will be loaded now
+$.joconut.on('before:new', function(){ // page will be loaded now
 	alert('Before loading new page');
 });
 
-$.joconut.on('afterNew', function(){ // page was just loaded
+$.joconut.on('after:new', function(){ // page was just loaded
 	alert('After loading new page');
 });
 ```
