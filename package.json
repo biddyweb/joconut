@@ -1,8 +1,8 @@
 {
-  "name": "jquery.Joconut",
+  "name": "joconut",
   "title": "Joconut",
   "description": "Never load a full page on every request again.",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "homepage": "https://github.com/vdemedes/joconut",
   "author": {
     "name": "Vadim Demedes",
@@ -23,7 +23,10 @@
     }
   ],
   "dependencies": {
-    "jquery": "1.7"
+    "grunt": "0.4.1",
+    "grunt-contrib-concat": "0.3.0",
+    "grunt-contrib-uglify": "0.2.2",
+    "grunt-contrib-watch": "0.4.4"
   },
   "keywords": ["pjax", "ajax"]
 }
