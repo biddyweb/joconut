@@ -8,6 +8,12 @@ Download the [production version][min] or the [development version][max].
 [min]: https://raw.github.com/vdemedes/joconut/master/dist/joconut.min.js
 [max]: https://raw.github.com/vdemedes/joconut/master/dist/joconut.js
 
+Or, install Joconut via Bower:
+
+```
+bower install joconut
+```
+
 Include it in your web pages(1.3kb minified and gzipped):
 
 ```html
@@ -24,16 +30,12 @@ $.joconut.on('error', function(err){ // fires on timeout, page without <body>, i
 	alert('Error while loading new page!');
 });
 
-$.joconut.on('new', function(){ // Page changed
+$.joconut.on('fetch', function(){ // Page changed
 	alert('New page!');
 });
 
-$.joconut.on('before:new', function(){ // page will be loaded now
+$.joconut.on('before:fetch', function(){ // page will be loaded now
 	alert('Before loading new page');
-});
-
-$.joconut.on('after:new', function(){ // page was just loaded
-	alert('After loading new page');
 });
 ```
 
@@ -47,16 +49,14 @@ $.joconut.container = '#container'; // default is 'body'
 
 # Features
 
-- Lightweight(1.3kb minified and gzipped)
 - Detects and loads scripts and stylesheets from fetched pages, if they do not exist in the current one
 - HTML5 History API support with fallback to location.hash
 - Can replace only specific part of the page
 
 # How is it different from the existing PJAX plugin?
 
-1. 1.3kb minified and gzipped
-2. Auto-detects and loads JS and CSS from fetched pages, if needed
-3. No need to set up or configure
+1. Auto-detects and loads JS and CSS from fetched pages, if needed
+2. No need to set up or configure
 
 # Browser support
 
@@ -64,10 +64,6 @@ $.joconut.container = '#container'; // default is 'body'
 [hashchange]: http://caniuse.com/#search=hashchange
 
 Joconut can work in browsers, which support HTML5 History API or hashchange event. For the list of supported browsers check out these links: [pushstate][pushstate] and [hashchange][hashchange]
-
-# Tests
-
-You should have **node** to be installed. ```cd test && npm i connect route66 && node server.js```. Navigate to http://localhost:3000 after that and play.
 
 # License
 
