@@ -1,0 +1,9 @@
+{
+	"name": "joconut",
+	"version": "0.1.12",
+	"main": "build/joconut.js",
+	"ignore": [],
+	"dependencies": {
+		"history.js": "1.8.0"
+	}
+}
