@@ -67,5 +67,5 @@ Joconut can work in browsers, which support HTML5 History API or hashchange even
 
 # License
 
-Copyright (c) 2012 Vadim Demedes  
+Copyright (c) 2013 Vadim Demedes  
 Licensed under the MIT license.
