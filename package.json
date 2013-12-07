@@ -2,11 +2,10 @@
   "name": "joconut",
   "title": "Joconut",
   "description": "Never load a full page on every request again.",
-  "version": "0.1.11",
+  "version": "0.2.0",
   "homepage": "https://github.com/vdemedes/joconut",
   "author": {
     "name": "Vadim Demedes",
-    "email": "sbioko@gmail.com",
     "url": "http://github.com/vdemedes"
   },
   "repository": {
