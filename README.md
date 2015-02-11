@@ -1,3 +1,5 @@
+**Warning**: Project is out-of-date, it should not be used.
+
 # Joconut
 
 Never load a full page on every request again.
